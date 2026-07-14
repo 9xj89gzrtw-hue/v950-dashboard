@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OS Dashboard Report — 2026-07-14T12:44:25</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; background: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; line-height: 1.5; }
+h1 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; font-size: 24px; }
+h2 { color: #58a6ff; font-size: 16px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 32px; }
+.subtitle { color: #6e7681; font-size: 13px; margin-bottom: 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 16px; }
+.card h3 { margin: 0 0 12px 0; color: #58a6ff; font-size: 13px; text-transform: uppercase; }
+.metric { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #21262d; font-size: 13px; }
+.metric:last-child { border: 0; }
+.value { color: #7ee787; font-weight: 600; }
+.warn { color: #f0883e; font-weight: 600; }
+.err { color: #f85149; font-weight: 600; }
+table { width: 100%; border-collapse: collapse; background: #161b22; border-radius: 6px; overflow: hidden; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #21262d; font-size: 12px; }
+th { background: #21262d; color: #58a6ff; text-transform: uppercase; font-size: 11px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; color: #fff; }
+.badge.high { background: #f0883e; }
+.badge.critical { background: #f85149; }
+.badge.medium { background: #d29922; }
+.badge.low { background: #7ee787; }
+.violation, .search { background: #161b22; padding: 8px 12px; border-left: 3px solid #f0883e; margin-bottom: 6px; font-size: 12px; }
+.search { border-left-color: #58a6ff; }
+.commit-log { background: #161b22; padding: 12px; border-radius: 6px; font-family: 'SF Mono', monospace; font-size: 11px; color: #7ee787; }
+.note { background: #1c2128; border: 1px solid #30363d; border-radius: 6px; padding: 12px; margin: 16px 0; font-size: 13px; }
+.note.warn { border-color: #f0883e; }
+.note strong { color: #f0883e; }
+</style>
+</head>
+<body>
+<h1>OS Dashboard Report</h1>
+<div class="subtitle">Generated: 2026-07-14T12:44:25.727410+00:00 | V134 static report (no localhost needed)</div>
+
+<div class="note warn">
+<strong>⚠️ Sandbox limitation:</strong> This is a STATIC HTML report. The live dashboard at <code>localhost:8765</code>
+is NOT reachable from your machine — it runs inside the agent's sandboxed environment which is isolated
+from your terminal. This report is the alternative: download it, open in browser, see all metrics.
+</div>
+
+<h2>System</h2>
+<div class="grid">
+  <div class="card"><h3>Machine</h3>
+    <div class="metric"><span>Hostname</span><span class="value">c-6a560e2c-144c75ca-0616f0c96bf4</span></div>
+    <div class="metric"><span>Python</span><span class="value">3.12.13</span></div>
+    <div class="metric"><span>Platform</span><span>Linux-5.10.134-013.8.3.kangaroo.al8.x86_64-x86_64-with-glibc</span></div>
+    <div class="metric"><span>CPU cores</span><span class="value">2</span></div>
+    <div class="metric"><span>CPU usage</span><span class="value">0.0%</span></div>
+  </div>
+  <div class="card"><h3>Memory</h3>
+    <div class="metric"><span>Total</span><span class="value">3.9 GB</span></div>
+    <div class="metric"><span>Used</span><span class="value">12.3%</span></div>
+  </div>
+  <div class="card"><h3>Disk</h3>
+    <div class="metric"><span>Free</span><span class="value">6.7 GB</span></div>
+    <div class="metric"><span>Used</span><span class="value">26.8%</span></div>
+  </div>
+</div>
+
+<h2>LLM Gateway</h2>
+<div class="grid">
+  <div class="card"><h3>Endpoints</h3>
+    <div class="metric"><span>Total</span><span class="value">86</span></div>
+    <div class="metric"><span>Available</span><span class="value">84</span></div>
+    <div class="metric"><span>Rate-limited</span><span class="value">0</span></div>
+    <div class="metric"><span>Circuit tripped</span><span class="value">0</span></div>
+    <div class="metric"><span>No key</span><span class="warn">2</span></div>
+  </div>
+  <div class="card"><h3>Providers</h3>
+    <table><tr><th>Provider</th><th>Endpoints</th></tr><tr><td>or</td><td>16</td></tr><tr><td>mistral</td><td>15</td></tr><tr><td>siliconflow</td><td>10</td></tr><tr><td>gemini</td><td>6</td></tr><tr><td>cohere</td><td>5</td></tr><tr><td>sn</td><td>4</td></tr><tr><td>groq_proxy</td><td>4</td></tr><tr><td>aion_proxy</td><td>4</td></tr><tr><td>hf</td><td>3</td></tr><tr><td>cerebras_proxy</td><td>3</td></tr><tr><td>zhipu</td><td>3</td></tr><tr><td>airforce_proxy</td><td>3</td></tr><tr><td>cf</td><td>2</td></tr><tr><td>gh</td><td>2</td></tr><tr><td>kilo</td><td>2</td></tr><tr><td>llm7</td><td>1</td></tr><tr><td>local_llm</td><td>1</td></tr><tr><td>poll</td><td>1</td></tr><tr><td>poll_get</td><td>1</td></tr></table>
+  </div>
+  <div class="card"><h3>Cost (today)</h3>
+    <div class="metric"><span>Daily spent</span><span class="value">$0.0</span></div>
+    <div class="metric"><span>Daily limit</span><span>$10.0</span></div>
+    <div class="metric"><span>Remaining</span><span class="value">$10.0</span></div>
+    <div class="metric"><span>Total (all-time)</span><span>$0.0</span></div>
+  </div>
+  <div class="card"><h3>Cache</h3>
+    <div class="metric"><span>Entries</span><span class="value">0</span></div>
+    <div class="metric"><span>Total hits</span><span class="value">0</span></div>
+    <div class="metric"><span>Size</span><span>0.0 MB</span></div>
+  </div>
+</div>
+
+<h2>CVE Scan</h2>
+<div class="card"><h3>Vulnerabilities (0 found, min severity: MEDIUM)</h3>
+  <div class="metric"><span>Packages scanned</span><span class="value">445</span></div>
+  <div class="metric"><span>Last scan</span><span>2026-07-14T03:28:18</span></div>
+</div>
+<table>
+<tr><th>Severity</th><th>Package</th><th>Version</th><th>ID</th><th>Fix</th></tr>
+<tr><td colspan="5">No vulnerabilities found</td></tr>
+</table>
+
+<h2>Load Test</h2>
+<div class="grid">
+  <div class="card"><h3>Results</h3>
+    <div class="metric"><span>Total requests</span><span class="value">10</span></div>
+    <div class="metric"><span>Concurrency</span><span>5</span></div>
+    <div class="metric"><span>Duration</span><span>0.01s</span></div>
+    <div class="metric"><span>Throughput</span><span class="value">866.3 RPS</span></div>
+    <div class="metric"><span>Success</span><span class="value">10</span></div>
+    <div class="metric"><span>Failures</span><span class="value">0</span></div>
+  </div>
+  <div class="card"><h3>Latency</h3>
+    <div class="metric"><span>p50</span><span class="value">1.2 ms</span></div>
+    <div class="metric"><span>p95</span><span class="value">8.2 ms</span></div>
+    <div class="metric"><span>p99</span><span class="value">8.2 ms</span></div>
+    <div class="metric"><span>Providers used</span><span>cache(sn)</span></div>
+  </div>
+</div>
+
+<h2>Rule Enforcement (V133)</h2>
+<div class="card"><h3>Recent violations (6 total)</h3>
+  <div class="violation"><span class="badge high">HIGH</span> R1_PERSIST_GITHUB: 7 uncommitted files in v950-bot</div><div class="violation"><span class="badge high">HIGH</span> R1_PERSIST_GITHUB: 9 uncommitted files in v950-bot</div><div class="violation"><span class="badge high">HIGH</span> R1_PERSIST_GITHUB: 6 uncommitted files in v950-bot</div><div class="violation"><span class="badge high">HIGH</span> R1_PERSIST_GITHUB: 9 uncommitted files in v950-bot</div><div class="violation"><span class="badge high">HIGH</span> R1_PERSIST_GITHUB: 10 uncommitted files in v950-bot</div><div class="violation"><span class="badge high">HIGH</span> R1_PERSIST_GITHUB: 22 uncommitted files in v950-bot</div>
+</div>
+
+<h2>Web Searches</h2>
+<div class="card"><h3>Recent searches (5 total)</h3>
+  <div class="search">"test query about catering competitors" — 5 results @ 2026-07-14T02:58:18</div><div class="search">"test query" — 5 results @ 2026-07-14T11:48:00</div><div class="search">"catering website design" — 3 results @ 2026-07-14T11:48:00</div><div class="search">"test query" — 5 results @ 2026-07-14T11:53:08</div><div class="search">"catering website design" — 3 results @ 2026-07-14T11:53:08</div>
+</div>
+
+<h2>Heartbeat</h2>
+<div class="card"><h3>Last health check</h3>
+    <div class="metric"><span>Timestamp</span><span>2026-07-14T11:53:08</span></div>
+    <div class="metric"><span>Healthy</span><span class="value">True</span></div>
+    <div class="metric"><span>Checks</span><span>{"git": true, "scripts": true, "gateway": true, "local_llm": true, "disk_space": true}</span></div>
+</div>
+
+<h2>Git Activity</h2>
+<div class="commit-log">4a6b2d2 V138.3: 65/65 skills + HF Space deployed + security hardening<br>19ca9f2 V138: Anti-gaming critic + 15 skills + HF + GitHub Pages (HONEST 4/10)<br>842e2a7 V137: Integration Wiring — 37 unit tests + HonestyMiddleware active + perf baseline<br>f964a35 V136: Production Polish — 9.6/10 critic score (all critics ≥9)<br>4c8ef96 Auto-sync: llm_superpowers_v75.py<br>419f37d Auto-sync: llm_superpowers_v74.py<br>d68da31 Auto-sync: llm_superpowers_v73.py<br>40a6278 Auto-sync: llm_superpowers_v72.py<br>d3b1048 Auto-sync: llm_superpowers_v71.py<br>10aedeb Auto-sync: llm_superpowers_v70.py</div>
+
+<div class="note">
+This report is generated by <code>mega_v134.py</code> — a static HTML dashboard.
+Run <code>python3 scripts/mega_v134.py</code> to regenerate.
+The file is saved to <code>/home/z/my-project/download/os_dashboard_report.html</code>
+and committed to GitHub so it persists across sessions.
+</div>
+
+</body></html>

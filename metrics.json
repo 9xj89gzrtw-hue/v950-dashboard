@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-07-14T12:44:25.727410+00:00",
+  "system": {
+    "hostname": "c-6a560e2c-144c75ca-0616f0c96bf4",
+    "python": "3.12.13",
+    "platform": "Linux-5.10.134-013.8.3.kangaroo.al8.x86_64-x86_64-with-glibc2.41",
+    "cpu_count": 2,
+    "cpu_percent": 0.0,
+    "memory_total_gb": 3.9,
+    "memory_used_pct": 12.3,
+    "disk_free_gb": 6.7,
+    "disk_used_pct": 26.823934094544814
+  },
+  "gateway": {
+    "total_endpoints": 86,
+    "available": 84,
+    "rate_limited": 0,
+    "circuit_tripped": 0,
+    "no_key": 2,
+    "providers": {
+      "sn": 4,
+      "hf": 3,
+      "groq_proxy": 4,
+      "cerebras_proxy": 3,
+      "mistral": 15,
+      "cohere": 5,
+      "or": 16,
+      "cf": 2,
+      "gh": 2,
+      "gemini": 6,
+      "llm7": 1,
+      "zhipu": 3,
+      "kilo": 2,
+      "aion_proxy": 4,
+      "airforce_proxy": 3,
+      "siliconflow": 10,
+      "local_llm": 1,
+      "poll": 1,
+      "poll_get": 1
+    }
+  },
+  "cost": {
+    "daily_spent": 0.0,
+    "daily_limit": 10.0,
+    "hourly_spent": 0.0,
+    "hourly_limit": 2.0,
+    "total_spent": 0.0,
+    "daily_remaining": 10.0
+  },
+  "cache": {
+    "entries": 0,
+    "total_hits": 0,
+    "size_mb": 0.0,
+    "max_entries": 5000,
+    "max_size_mb": 50.0
+  },
+  "cve": {
+    "ts": "2026-07-14T03:28:18.055507+00:00",
+    "total_packages_scanned": 445,
+    "vulnerabilities_found": 0,
+    "min_severity_filter": "MEDIUM",
+    "vulnerabilities": []
+  },
+  "load_test": {
+    "ts": "2026-07-14T12:44:27.208563+00:00",
+    "total_requests": 10,
+    "concurrency": 5,
+    "duration_s": 0.01,
+    "throughput_rps": 866.3,
+    "success_count": 10,
+    "failure_count": 0,
+    "p50_ms": 1.2,
+    "p95_ms": 8.2,
+    "p99_ms": 8.2,
+    "providers_used": [
+      "cache(sn)"
+    ]
+  },
+  "rule_violations": {
+    "total": 6,
+    "recent": [
+      {
+        "rule": "R1_PERSIST_GITHUB",
+        "severity": "HIGH",
+        "message": "7 uncommitted files in v950-bot",
+        "files": [
+          "esearch/catering/assets/catering-services",
+          "research/catering/assets/nextjs-restaurant-website-cms",
+          "research/catering/assets/restaurant-html-template",
+          "scripts/.v132_state/heartbeat.json",
+          "scripts/.v132_state/v132.log",
+          "scripts/.v133_state/",
+          "scripts/mega_v133.py"
+        ],
+        "fix": "Run: python3 scripts/git_safe_commit.py \"WIP save\"",
+        "ts": "2026-07-14T02:58:18.463863+00:00"
+      },
+      {
+        "rule": "R1_PERSIST_GITHUB",
+        "severity": "HIGH",
+        "message": "9 uncommitted files in v950-bot",
+        "files": [
+          "esearch/catering/assets/catering-services",
+          "research/catering/assets/nextjs-restaurant-website-cms",
+          "research/catering/assets/restaurant-html-template",
+          "scripts/.v132_state/heartbeat.json",
+          "scripts/.v132_state/v132.log",
+          "scripts/agent_os.py",
+          "scripts/mega_gateway.py",
+          "scripts/.v133_state/",
+          "scripts/mega_v133.py"
+        ],
+        "fix": "Run: python3 scripts/git_safe_commit.py \"WIP save\"",
+        "ts": "2026-07-14T02:59:35.580521+00:00"
+      },
+      {
+        "rule": "R1_PERSIST_GITHUB",
+        "severity": "HIGH",
+        "message": "6 uncommitted files in v950-bot",
+        "files": [
+          "esearch/catering/assets/catering-services",
+          "research/catering/assets/nextjs-restaurant-website-cms",
+          "research/catering/assets/restaurant-html-template",
+          "scripts/.v132_state/heartbeat.json",
+          "scripts/.v132_state/v132.log",
+          "scripts/.v133_state/v133.log"
+        ],
+        "fix": "Run: python3 scripts/git_safe_commit.py \"WIP save\"",
+        "ts": "2026-07-14T03:12:52.387669+00:00"
+      },
+      {
+        "rule": "R1_PERSIST_GITHUB",
+        "severity": "HIGH",
+        "message": "9 uncommitted files in v950-bot",
+        "files": [
+          "esearch/catering/assets/catering-services",
+          "research/catering/assets/nextjs-restaurant-website-cms",
+          "research/catering/assets/restaurant-html-template",
+          "scripts/.v132_state/heartbeat.json",
+          "scripts/.v132_state/v132.log",
+          "scripts/.v133_state/dashboard.pid",
+          "scripts/.v133_state/dashboard_stdout.log",
+          "scripts/.v133_state/v133.log",
+          "scripts/mega_circuit_breaker_state.json"
+        ],
+        "fix": "Run: python3 scripts/git_safe_commit.py \"WIP save\"",
+        "ts": "2026-07-14T11:20:47.007739+00:00"
+      },
+      {
+        "rule": "R1_PERSIST_GITHUB",
+        "severity": "HIGH",
+        "message": "10 uncommitted files in v950-bot",
+        "files": [
+          "esearch/catering/assets/catering-services",
+          "research/catering/assets/nextjs-restaurant-website-cms",
+          "research/catering/assets/restaurant-html-template",
+          "scripts/.v132_state/heartbeat.json",
+          "scripts/.v132_state/perf_metrics.jsonl",
+          "scripts/.v132_state/traces.jsonl",
+          "scripts/.v133_state/v133.log",
+          "scripts/.v133_state/web_searches.jsonl",
+          "scripts/agent_os.py",
+          "scripts/test_v13x.py"
+        ],
+        "fix": "Run: python3 scripts/git_safe_commit.py \"WIP save\"",
+        "ts": "2026-07-14T11:48:00.174345+00:00"
+      },
+      {
+        "rule": "R1_PERSIST_GITHUB",
+        "severity": "HIGH",
+        "message": "22 uncommitted files in v950-bot",
+        "files": [
+          "esearch/catering/assets/catering-services",
+          "research/catering/assets/nextjs-restaurant-website-cms",
+          "research/catering/assets/restaurant-html-template",
+          "scripts/.v132_state/heartbeat.json",
+          "scripts/.v132_state/perf_metrics.jsonl",
+          "scripts/.v132_state/traces.jsonl",
+          "scripts/.v133_state/rule_violations.jsonl",
+          "scripts/.v133_state/v133.log",
+          "scripts/.v133_state/web_searches.jsonl",
+          "scripts/.v135_state/actions.jsonl"
+        ],
+        "fix": "Run: python3 scripts/git_safe_commit.py \"WIP save\"",
+        "ts": "2026-07-14T11:53:08.900819+00:00"
+      }
+    ]
+  },
+  "web_searches": {
+    "total": 5,
+    "recent": [
+      {
+        "ts": 1783997898.4817836,
+        "date": "2026-07-14T02:58:18.481786+00:00",
+        "query": "test query about catering competitors",
+        "results_count": 5
+      },
+      {
+        "ts": 1784029680.1047366,
+        "date": "2026-07-14T11:48:00.104737+00:00",
+        "query": "test query",
+        "results_count": 5
+      },
+      {
+        "ts": 1784029680.1067638,
+        "date": "2026-07-14T11:48:00.106765+00:00",
+        "query": "catering website design",
+        "results_count": 3
+      },
+      {
+        "ts": 1784029988.832592,
+        "date": "2026-07-14T11:53:08.832593+00:00",
+        "query": "test query",
+        "results_count": 5
+      },
+      {
+        "ts": 1784029988.83338,
+        "date": "2026-07-14T11:53:08.833381+00:00",
+        "query": "catering website design",
+        "results_count": 3
+      }
+    ]
+  },
+  "git": {
+    "recent_commits": [
+      "4a6b2d2 V138.3: 65/65 skills + HF Space deployed + security hardening",
+      "19ca9f2 V138: Anti-gaming critic + 15 skills + HF + GitHub Pages (HONEST 4/10)",
+      "842e2a7 V137: Integration Wiring \u2014 37 unit tests + HonestyMiddleware active + perf baseline",
+      "f964a35 V136: Production Polish \u2014 9.6/10 critic score (all critics \u22659)",
+      "4c8ef96 Auto-sync: llm_superpowers_v75.py",
+      "419f37d Auto-sync: llm_superpowers_v74.py",
+      "d68da31 Auto-sync: llm_superpowers_v73.py",
+      "40a6278 Auto-sync: llm_superpowers_v72.py",
+      "d3b1048 Auto-sync: llm_superpowers_v71.py",
+      "10aedeb Auto-sync: llm_superpowers_v70.py"
+    ],
+    "repo": "9xj89gzrtw-hue/v950-bot"
+  },
+  "heartbeat": {
+    "ts": "2026-07-14T11:53:08.811698+00:00",
+    "epoch": 1784029988.8117146,
+    "pid": 1862,
+    "checks": {
+      "git": true,
+      "scripts": true,
+      "gateway": true,
+      "local_llm": true,
+      "disk_space": true
+    },
+    "healthy": true
+  }
+}
