@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-14T12:44:25.727410+00:00",
+  "generated_at": "2026-07-14T12:49:46.760779+00:00",
   "system": {
     "hostname": "c-6a560e2c-144c75ca-0616f0c96bf4",
     "python": "3.12.13",
     "platform": "Linux-5.10.134-013.8.3.kangaroo.al8.x86_64-x86_64-with-glibc2.41",
     "cpu_count": 2,
-    "cpu_percent": 0.0,
+    "cpu_percent": 0.5,
     "memory_total_gb": 3.9,
     "memory_used_pct": 12.3,
     "disk_free_gb": 6.7,
-    "disk_used_pct": 26.823934094544814
+    "disk_used_pct": 26.826695583212796
   },
   "gateway": {
     "total_endpoints": 86,
@@ -62,18 +62,19 @@
     "vulnerabilities": []
   },
   "load_test": {
-    "ts": "2026-07-14T12:44:27.208563+00:00",
+    "ts": "2026-07-14T12:49:55.632040+00:00",
     "total_requests": 10,
     "concurrency": 5,
-    "duration_s": 0.01,
-    "throughput_rps": 866.3,
+    "duration_s": 7.4,
+    "throughput_rps": 1.4,
     "success_count": 10,
     "failure_count": 0,
-    "p50_ms": 1.2,
-    "p95_ms": 8.2,
-    "p99_ms": 8.2,
+    "p50_ms": 1496.3,
+    "p95_ms": 6094.8,
+    "p99_ms": 6094.8,
     "providers_used": [
-      "cache(sn)"
+      "mistral",
+      "sn"
     ]
   },
   "rule_violations": {
